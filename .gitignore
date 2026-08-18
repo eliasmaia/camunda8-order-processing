@@ -1,0 +1,16 @@
+# Maven
+target/
+*.jar
+*.war
+
+# IDEs
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+
+# Logs e arquivos do sistema
+*.log
+.DS_Store

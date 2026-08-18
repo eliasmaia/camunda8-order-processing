@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  zeebe:
+    image: camunda/zeebe:8.5.0
+    container_name: zeebe-local
+    ports:
+      - "26500:26500" # Porta gRPC para conexão do Worker Java e do Modeler
+      - "8080:8080"   # Porta REST API e Management
+    environment:
+      - ZEEBE_STANDALONE=true
