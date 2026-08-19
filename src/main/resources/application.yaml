@@ -1,0 +1,24 @@
+server:
+    port: 8081
+
+spring:
+    application:
+        name: order-processing-service
+
+camunda:
+    client:
+        mode: simple
+        grpc:
+            address: http://127.0.0.1:26500
+        zeebe:
+            enabled: true
+            gateway-address: localhost:26500
+            security:
+                plaintext: true            
+
+zeebe:
+    client:
+        broker: 
+            gateway-address: localhost:26500
+        security:
+            plaintext: true            
